@@ -194,6 +194,9 @@ shinyServer(function(input, output, session) {
     # Kill all old Dashboard Observers
     
     try({lapply(observerpool,function(comp) { lapply(comp,function(x) { print("Kill"); x$suspend(); x$destroy(); })  })});
+    
+    try({unlink(paste("www/linksd1m1*.csv",sep=""))})
+    
     observerpool <<- list();
 
     ############## Portlet View ######################
