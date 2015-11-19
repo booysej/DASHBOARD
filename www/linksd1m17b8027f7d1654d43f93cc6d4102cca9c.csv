@@ -1,0 +1,15 @@
+"source","target","text","flow"
+"ZA","BW","%flow GWh",5440
+"ZA","LS","%flow GWh",280
+"MZ","MW","%flow GWh",162
+"BW","NA","%flow GWh",1263
+"ZM","NA","%flow GWh",12
+"ZW","NA","%flow GWh",152
+"SZ","ZA","%flow GWh",6591
+"ZW","ZA","%flow GWh",25
+"MZ","SZ","%flow GWh",7226
+"CD","ZM","%flow GWh",3
+"ZW","ZM","%flow GWh",5026
+"MZ","ZW","%flow GWh",4343
+"ZA","ZW","%flow GWh",5186
+"ZM","ZW","%flow GWh",3
