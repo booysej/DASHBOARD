@@ -984,7 +984,7 @@ shinyServer(function(input, output, session) {
       thepolicies = thepolicies[thepolicies!="NONE"]  
     }
     
-    selectInput("availablepolicies","AVAILABLE Policy Assuptions: (SELECT)",as.list(thepolicies),
+    selectInput("availablepolicies","AVAILABLE Policy Assumptions: (SELECT)",as.list(thepolicies),
                 size=5,selectize=FALSE)#selected=values$selectavail)
   })    
   output$lockedlistui <- renderUI({
@@ -1655,7 +1655,7 @@ shinyServer(function(input, output, session) {
                    stn = ref_objects[ref_objects$technology==st,]$name
                    si = idedata[idedata$technology_id %in% stid,]$series_id
                    
-                   datatable(ref_series[ref_series$id %in% si,],
+                   datatable(ref_series[ref_series$id %in% si,c("id","series","applicable.level","unit")],
                              rownames=FALSE,
                              #selection = list(mode = 'single', selected = c(1)),   
                              selection="single",

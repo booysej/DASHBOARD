@@ -9,6 +9,8 @@
  library(RSQLite)
  library(R.cache)
  library(memoise)
+ library(shiny)
+
 
 availabledashboards = c("Planner view"="planner.R",
                         "Environmentalist View"="environmentalist.R",

@@ -26,7 +26,8 @@ ui= tags$div(
                condition = "output.d1m1DASHBOARD.uuid!=null ",                                    
              tags$div(id="part1DASHBOARD.uuid",style="position: relative; left: 70px;top: -150px;",
                       sliderInput("d1yearDASHBOARD.uuid", 
-                                  " Tx Flows Year", 2010, 2031, 2015,1,animate=list(loop=TRUE),ticks=FALSE,width = 200)
+                                  " Tx Flows Year", 2010, 2031, 2015,1,
+                                  animate=list(loop=TRUE),ticks=FALSE,width = 200,sep="")
              ),
              tags$div(id="part2DASHBOARD.uuid",style="position: relative;left: 20px;top: -120px; ",
                       imageOutput("m1legendDASHBOARD.uuid", height = "30px")
